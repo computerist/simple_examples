@@ -1,9 +1,9 @@
 <html>
-    <head><title>Example Login</title></head>
+    <head><title>Send a Secret</title></head>
     <body>
-        <form action = "login.php" method = "POST">
-            <label>Username</label> <input type="text" name="username" id="username"/><br/>
-            <label>Password</label> <input type="password" name="password" id="password"/><br/>
+        <form action = "secret.php" method = "POST">
+            <label>Secret to send: </label>
+            <textarea id="secret"></textarea>
             <input type="submit" id="submit"/>
         </form>
     </body>
