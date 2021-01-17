@@ -3,7 +3,7 @@
     <body>
         <form action = "secret.php" method = "POST">
             <label>Secret to send: </label>
-            <textarea id="secret"></textarea>
+            <textarea id="message" name="message"></textarea>
             <input type="submit" id="submit"/>
         </form>
     </body>
