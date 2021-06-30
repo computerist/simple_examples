@@ -1,3 +1,6 @@
+
+<html>
+<body>
 <?php
 $db = new SQLite3('mysqlitedb.db');
 
@@ -6,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
     // The request is using the POST method
     $insert = 'INSERT INTO secrets (uuid, message) VALUES (\'' . $uuid . '\', \'' . $message . '\')';
-    echo($insert);
+    echo('Thanks! Your message has been sent!');
     if($db->exec($insert)) {
         echo($uuid);
     }
